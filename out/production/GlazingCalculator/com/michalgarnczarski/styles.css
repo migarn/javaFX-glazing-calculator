@@ -1,3 +1,7 @@
 GridPane {
     -fx-padding: 10;
 }
+
+TextField {
+    -fx-max-width: 120;
+}

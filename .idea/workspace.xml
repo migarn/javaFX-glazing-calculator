@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaFXApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFXApplication/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MyContacts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyContacts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SceneBuilder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SceneBuilder/.idea/workspace.xml" afterDir="false" />
@@ -100,21 +100,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+            <state relative-caret-position="170">
+              <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -142,9 +142,9 @@
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/sample.fxml" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Main.java" />
         <option value="$PROJECT_DIR$/src/module-info.java" />
-        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/styles.css" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml" />
+        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/styles.css" />
       </list>
     </option>
   </component>
@@ -198,7 +198,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586015697767" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586016153984" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -375,13 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -392,8 +385,15 @@
     <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+        <state relative-caret-position="170">
+          <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
