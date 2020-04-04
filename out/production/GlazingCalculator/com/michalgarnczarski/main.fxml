@@ -14,5 +14,9 @@
     <Label GridPane.rowIndex="5" GridPane.columnIndex="0" text="Szerokość ramki dystansowej [mm]:"/>
     <TextField fx:id="spacerWidthTextField" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
     <Button GridPane.rowIndex="7" GridPane.columnIndex="0" text="Oblicz"/>
+    <Label fx:id="upperOutput" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+    <Label fx:id="middleOutputBlack" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+    <Label fx:id="middleOutputRed" GridPane.rowIndex="10" GridPane.columnIndex="0" style="-fx-text-background-color: red"/>
+    <Label fx:id="lowerOutput" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
 
 </GridPane>

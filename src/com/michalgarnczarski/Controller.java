@@ -1,7 +1,5 @@
 package com.michalgarnczarski;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -20,6 +18,18 @@ public class Controller {
     @FXML
     private TextField spacerWidthTextField;
 
+    @FXML
+    private Label upperOutput;
+
+    @FXML
+    private Label middleOutputBlack;
+
+    @FXML
+    private Label middleOutputRed;
+
+    @FXML
+    private Label lowerOutput;
+
     public void initialize() {
         headerLabel.setText("Kalkulator służy do obliczania minimalnych grubości szyb." +
                 "\nObliczenia oparte są na normie zakładowej firmy PRESS GLASS SA.");
@@ -35,6 +45,11 @@ public class Controller {
         limitTextFieldLength(glassWidthTextField, 4);
         limitTextFieldLength(glassHeightTextField, 4);
         limitTextFieldLength(spacerWidthTextField, 2);
+
+        upperOutput.setText("Temporary output");
+        middleOutputBlack.setText("Temporary output");
+        middleOutputRed.setText("Temporary output");
+        lowerOutput.setText("Temporary output");
 
 
     }
