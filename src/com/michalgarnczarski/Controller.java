@@ -26,5 +26,16 @@ public class Controller {
         glassHeightTextField.setText("0");
         spacerWidthTextField.setText("16");
 
+        onlyNumbers(glassWidthTextField);
+        onlyNumbers(glassHeightTextField);
+        onlyNumbers(spacerWidthTextField);
+
+    }
+
+    private void onlyNumbers(TextField textField) {
+        textField.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.matches("\\d*")) return;
+            textField.setText(newValue.replaceAll("[^\\d]",""));
+        });
     }
 }
