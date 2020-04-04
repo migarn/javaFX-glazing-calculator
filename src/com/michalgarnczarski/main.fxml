@@ -8,14 +8,11 @@
           stylesheets="@styles.css">
     <Label fx:id="headerLabel" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
     <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Szerokość szyby [mm]:"/>
-    <TextField GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="20">
-    </TextField>
+    <TextField fx:id="glassWidthTextField" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
     <Label GridPane.rowIndex="3" GridPane.columnIndex="0" text="Wysokość szyby [mm]:"/>
-    <TextField GridPane.rowIndex="4" GridPane.columnIndex="0">
-    </TextField>
+    <TextField fx:id="glassHeightTextField" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
     <Label GridPane.rowIndex="5" GridPane.columnIndex="0" text="Szerokość ramki dystansowej [mm]:"/>
-    <TextField GridPane.rowIndex="6" GridPane.columnIndex="0">
-    </TextField>
+    <TextField fx:id="spacerWidthTextField" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
     <Button GridPane.rowIndex="7" GridPane.columnIndex="0" text="Oblicz"/>
 
 </GridPane>
