@@ -2,8 +2,20 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.GridPane?>
 
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
 <GridPane hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.michalgarnczarski.Controller"
-        stylesheets="@styles.css">
-    <Label fx:id="headerLabel" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+          stylesheets="@styles.css">
+    <Label fx:id="headerLabel" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Szerokość szyby [mm]:"/>
+    <TextField GridPane.rowIndex="2" GridPane.columnIndex="0">
+    </TextField>
+    <Label GridPane.rowIndex="3" GridPane.columnIndex="0" text="Wysokość szyby [mm]:"/>
+    <TextField GridPane.rowIndex="4" GridPane.columnIndex="0">
+    </TextField>
+    <Label GridPane.rowIndex="5" GridPane.columnIndex="0" text="Szerokość ramki dystansowej [mm]:"/>
+    <TextField GridPane.rowIndex="6" GridPane.columnIndex="0">
+    </TextField>
+    <Button GridPane.rowIndex="7" GridPane.columnIndex="0" text="Oblicz"/>
 
 </GridPane>

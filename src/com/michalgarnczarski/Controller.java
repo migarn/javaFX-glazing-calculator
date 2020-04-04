@@ -11,6 +11,6 @@ public class Controller {
 
     public void initialize() {
         headerLabel.setText("Kalkulator służy do obliczania minimalnych grubości szyb." +
-                "\nObliczenia oparte są na normie zakłądowej firmy PRESS GLASS SA");
+                "\nObliczenia oparte są na normie zakładowej firmy PRESS GLASS SA.");
     }
 }
