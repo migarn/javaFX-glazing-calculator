@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GlazingCalculator/com/michalgarnczarski/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GlazingCalculator/com/michalgarnczarski/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GlazingCalculator/com/michalgarnczarski/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaFXApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFXApplication/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MyContacts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyContacts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SceneBuilder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SceneBuilder/.idea/workspace.xml" afterDir="false" />
@@ -90,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -105,12 +100,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -135,11 +139,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/sample.fxml" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml" />
         <option value="$PROJECT_DIR$/src/module-info.java" />
+        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml" />
+        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/styles.css" />
       </list>
     </option>
   </component>
@@ -193,7 +198,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586004115915" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586005682919" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -349,13 +354,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GlazingCalculator.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -377,11 +375,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/main.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
