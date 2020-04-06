@@ -13,7 +13,8 @@
     <TextField fx:id="glassHeightTextField" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
     <Label GridPane.rowIndex="5" GridPane.columnIndex="0" text="Szerokość ramki dystansowej [mm]:"/>
     <TextField fx:id="spacerWidthTextField" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
-    <Button fx:id="calculateButton" GridPane.rowIndex="7" GridPane.columnIndex="0" text="Oblicz"/>
+    <Button fx:id="calculateButton" GridPane.rowIndex="7" GridPane.columnIndex="0" text="Oblicz"
+        onAction="#calculate"/>
     <Label fx:id="upperOutput" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
     <Label fx:id="middleOutputBlack" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
     <Label fx:id="middleOutputRed" GridPane.rowIndex="10" GridPane.columnIndex="0" style="-fx-text-background-color: red"/>

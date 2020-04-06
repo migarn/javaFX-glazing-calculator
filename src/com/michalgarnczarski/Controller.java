@@ -55,13 +55,6 @@ public class Controller {
         limitTextFieldLength(glassWidthTextField, 4);
         limitTextFieldLength(glassHeightTextField, 4);
         limitTextFieldLength(spacerWidthTextField, 2);
-
-        upperOutput.setText("Temporary output");
-        middleOutputBlack.setText("Temporary output");
-        middleOutputRed.setText("Temporary output");
-        lowerOutput.setText("Temporary output");
-
-
     }
 
     private void onlyNumbers(TextField textField) {
@@ -78,5 +71,13 @@ public class Controller {
                 textField.setText(limitedString);
             }
         });
+    }
+
+    @FXML
+    private void calculate() {
+        upperOutput.setText("Temporary output");
+        middleOutputBlack.setText("Temporary output");
+        middleOutputRed.setText("Temporary output");
+        lowerOutput.setText("Temporary output");
     }
 }
