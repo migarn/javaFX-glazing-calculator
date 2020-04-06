@@ -75,9 +75,12 @@ public class Controller {
 
         // Do usunięcia
         String s = glass.getLongerDimension() + "\n" + glass.getShorterDimension() + "\n" + glass.getArea() + "\n" + glass.getDimensionsRatio();
+        GlassThicknessDefiner definer = new GlassThicknessDefiner(glass);
+        String thickness = "Thickness: " + definer.defineThickness();
+        //
 
         upperOutput.setText(s);
-        middleOutputBlack.setText("Temporary output");
+        middleOutputBlack.setText(thickness);
         middleOutputRed.setText("Temporary output");
         lowerOutput.setText("Temporary output");
     }

@@ -21,7 +21,7 @@ public class GlassThicknessDefiner {
         }
     }
 
-    public int defineThicknessFor16() {
+    private int defineThicknessFor16() {
         if (glass.getArea() <= 1.5 && glass.getLongerDimension() <= 1500 && glass.getDimensionsRatio() > 1 / 6) {
             return 3;
         } else if (glass.getArea() <= 3.35 && glass.getLongerDimension() <= 2500 && glass.getDimensionsRatio() > 1 / 6) {
@@ -41,7 +41,7 @@ public class GlassThicknessDefiner {
         }
     }
 
-    public int defineThicknessFor12() {
+    private int defineThicknessFor12() {
         if (glass.getArea() <= 1.5 && glass.getLongerDimension() <= 1500 && glass.getDimensionsRatio() > 1 / 6) {
             return 3;
         } else if (glass.getArea() <= 3.35 && glass.getLongerDimension() <= 2500 && glass.getDimensionsRatio() > 1 / 6) {
@@ -57,7 +57,7 @@ public class GlassThicknessDefiner {
         }
     }
 
-    public int defineThicknessFor9() {
+    private int defineThicknessFor9() {
         if (glass.getArea() <= 1.5 && glass.getLongerDimension() <= 1500 && glass.getDimensionsRatio() > 1 / 6) {
             return 3;
         } else if (glass.getArea() <= 2.5 && glass.getLongerDimension() <= 2500 && glass.getDimensionsRatio() > 1 / 6) {
@@ -73,7 +73,7 @@ public class GlassThicknessDefiner {
         }
     }
 
-    public int defineThicknessFor6() {
+    private int defineThicknessFor6() {
         if (glass.getArea() <= 2 && glass.getLongerDimension() <= 200 && glass.getDimensionsRatio() > 1 / 6) {
             return 4;
         } else if (glass.getArea() <= 2.5 && glass.getLongerDimension() <= 2500) {
