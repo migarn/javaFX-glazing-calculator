@@ -22,7 +22,7 @@ public class Glass {
             this.shorterDimension = glassWidth;
         }
 
-        this.area =  Math.round(100.0 * longerDimension * shorterDimension / 10000) / 100.0;
+        this.area =  Math.round(100.0 * longerDimension * shorterDimension / 1000000) / 100.0;
         this.dimensionsRatio = (double) shorterDimension / longerDimension;
     }
 
