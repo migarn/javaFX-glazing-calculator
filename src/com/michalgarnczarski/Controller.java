@@ -76,12 +76,22 @@ public class Controller {
             upperOutputMessage += "\n\n" + descriptionCreator.defineThicknessDescription();
 
             if (descriptionCreator.getSurchargeDefiner().getSurcharge() == 0) {
-                blackMiddleOutputMessage += descriptionCreator.defineSurchargeDescription();
+                GridPane.setRowIndex(middleOutputBlack,GridPane.getRowIndex(upperOutput) + 1);
+                blackMiddleOutputMessage = descriptionCreator.defineSurchargeDescription();
             } else {
                 GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 1);
-                redMiddleOutputMessage += descriptionCreator.defineSurchargeDescription();
+                redMiddleOutputMessage = descriptionCreator.defineSurchargeDescription();
             }
 
+            if (glass.getDimensionsRatio() < 0.1) {
+                redMiddleOutputMessage += descriptionCreator.defineRatioDescription();
+            }
+
+            GridPane.setRowIndex(lowerOutput,GridPane.getRowIndex(upperOutput) + 2);
+            lowerOutputMessage = descriptionCreator.defineLatterDescription();
+        } else {
+            GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 1);
+            redMiddleOutputMessage = descriptionCreator.defineThicknessDescription();
         }
 
         upperOutput.setText(upperOutputMessage);
