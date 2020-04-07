@@ -2,12 +2,18 @@ package com.michalgarnczarski;
 
 public class GlassSurchargeDefiner {
     private Glass glass;
+    private int surcharge;
 
     public GlassSurchargeDefiner(Glass glass) {
         this.glass = glass;
+        this.surcharge = defineSurcharge();
     }
 
-    public int defineSurcharge() {
+    public int getSurcharge() {
+        return surcharge;
+    }
+
+    private int defineSurcharge() {
         if (glass.getLongerDimension() <= 3000 && glass.getShorterDimension() <= 2400) {
             return 0;
         } else if ((glass.getLongerDimension() > 2400 && glass.getLongerDimension() <= 3000
