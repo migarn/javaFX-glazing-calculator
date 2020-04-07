@@ -18,6 +18,14 @@ public class GlassDescriptionCreator {
                 "\n\t- szerokość ramki dystansowej: " + glass.getSpacerThickness() + " mm.";
     }
 
+    public GlassThicknessDefiner getThickness() {
+        return thicknessDefiner;
+    }
+
+    public GlassSurchargeDefiner getSurchargeDefiner() {
+        return surchargeDefiner;
+    }
+
     public String defineThicknessDescription() {
         int floatGlassThickness = 0;
         String vsgGlassThickness = "";

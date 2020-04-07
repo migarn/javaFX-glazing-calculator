@@ -2,12 +2,18 @@ package com.michalgarnczarski;
 
 public class GlassThicknessDefiner {
     private Glass glass;
+    private int thickness;
 
     public GlassThicknessDefiner(Glass glass) {
         this.glass = glass;
+        this.thickness = defineThickness();
     }
 
-    public int defineThickness() {
+    public int getThickness() {
+        return thickness;
+    }
+
+    private int defineThickness() {
         if (glass.getSpacerThickness() >= 16) {
             return defineThicknessFor16();
         } else if (glass.getSpacerThickness() >= 12) {
