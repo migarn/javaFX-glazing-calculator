@@ -62,6 +62,11 @@ public class Controller {
 
     @FXML
     private void calculate() {
+        upperOutput.setText("");
+        middleOutputBlack.setText("");
+        middleOutputRed.setText("");
+        lowerOutput.setText("");
+
         Glass glass = new Glass(Integer.parseInt(glassWidthTextField.getText()),
                 Integer.parseInt(glassHeightTextField.getText()), Integer.parseInt(spacerWidthTextField.getText()));
 
@@ -74,25 +79,24 @@ public class Controller {
 
         if (descriptionCreator.getThicknessDefiner().getThickness() != -1) {
             upperOutputMessage += "\n\n" + descriptionCreator.defineThicknessDescription();
+            GridPane.setRowIndex(middleOutputBlack,GridPane.getRowIndex(upperOutput) + 1);
+            GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 1);
 
             if (descriptionCreator.getSurchargeDefiner().getSurcharge() == 0) {
-                GridPane.setRowIndex(middleOutputBlack,GridPane.getRowIndex(upperOutput) + 1);
                 blackMiddleOutputMessage = descriptionCreator.defineSurchargeDescription();
             } else {
-                GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 1);
                 redMiddleOutputMessage = descriptionCreator.defineSurchargeDescription();
             }
 
             if (glass.getDimensionsRatio() < 0.1) {
                 if (descriptionCreator.getSurchargeDefiner().getSurcharge() > 0) {
-                    GridPane.setRowIndex(lowerOutput,GridPane.getRowIndex(upperOutput) + 2);
                     redMiddleOutputMessage += "\n\n";
                 } else {
                     GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 2);
-                    GridPane.setRowIndex(lowerOutput,GridPane.getRowIndex(upperOutput) + 3);
                 }
                 redMiddleOutputMessage += descriptionCreator.defineRatioDescription();
             }
+            GridPane.setRowIndex(lowerOutput,GridPane.getRowIndex(middleOutputRed) + 1);
             lowerOutputMessage = descriptionCreator.defineLatterDescription();
         } else {
             GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 1);
