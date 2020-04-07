@@ -11,6 +11,13 @@ public class GlassDescriptionCreator {
         this.surchargeDefiner = new GlassSurchargeDefiner(glass);
     }
 
+    public String defineGeneralDescription() {
+        return "Założone parametry szyby:" +
+                "\n\t- wymiary: " + glass.getGlassWidth() + " mm x " + glass.getGlassHeight() + " mm," +
+                "\n\t- powierzchnia szyby: " + glass.getArea() + " m2," +
+                "\n\t- szerokość ramki dystansowej: " + glass.getSpacerThickness() + " mm.";
+    }
+
     public String defineThicknessDescription() {
         int floatGlassThickness = 0;
         String vsgGlassThickness = "";

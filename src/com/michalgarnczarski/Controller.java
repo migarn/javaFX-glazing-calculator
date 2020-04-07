@@ -34,6 +34,9 @@ public class Controller {
     @FXML
     private Label lowerOutput;
 
+    private Glass glass;
+    private GlassDescriptionCreator descriptionCreator;
+
     public void initialize() {
 
         headerLabel.setText("Kalkulator służy do obliczania minimalnych grubości szyb." +
@@ -70,19 +73,13 @@ public class Controller {
 
     @FXML
     private void calculate() {
-        Glass glass = new Glass(Integer.parseInt(glassWidthTextField.getText()),
+        glass = new Glass(Integer.parseInt(glassWidthTextField.getText()),
                 Integer.parseInt(glassHeightTextField.getText()), Integer.parseInt(spacerWidthTextField.getText()));
 
-        // Do usunięcia
-        String s = glass.getLongerDimension() + "\n" + glass.getShorterDimension() + "\n" + glass.getArea() + "\n" + glass.getDimensionsRatio();
-        GlassThicknessDefiner definer = new GlassThicknessDefiner(glass);
-        GlassSurchargeDefiner definers = new GlassSurchargeDefiner(glass);
-        String thickness = "Thickness: " + definer.defineThickness();
-        String surcharge = "Surcharge: " + definers.defineSurcharge();
-        //
+        descriptionCreator = new GlassDescriptionCreator(glass);
 
-        upperOutput.setText(s);
-        middleOutputBlack.setText(thickness + surcharge);
+        upperOutput.setText("\n" + descriptionCreator.defineGeneralDescription());
+        middleOutputBlack.setText("");
         middleOutputRed.setText("");
         lowerOutput.setText("Temporary output");
     }
