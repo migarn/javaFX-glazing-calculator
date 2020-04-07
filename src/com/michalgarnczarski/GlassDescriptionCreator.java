@@ -73,23 +73,23 @@ public class GlassDescriptionCreator {
 
     public String defineSurchargeDescription() {
         if (surchargeDefiner.getSurcharge() == 0) {
-            return "\nDla zadanych parametrów nie ma dopłaty za nadgabaryt.";
+            return "Dla zadanych parametrów nie ma dopłaty za nadgabaryt.";
         } else if (surchargeDefiner.getSurcharge() > 0) {
-            return "\nDla zadanych parametrów dopłata za nadgabaryt wynosi " + surchargeDefiner.getSurcharge() + "%!";
+            return "Dla zadanych parametrów dopłata za nadgabaryt wynosi " + surchargeDefiner.getSurcharge() + "%!";
         } else {
-            return "\nDla zadanych parametrów wielkość dopłaty za nadgabaryt należy konsultować z dostawcą szkła!";
+            return "Dla zadanych parametrów wielkość dopłaty za nadgabaryt należy konsultować z dostawcą szkła!";
         }
     }
 
     public String defineRatioDescription() {
         if (glass.getDimensionsRatio() < 0.1) {
-            return "\nDla zadanych parametrów stosunek długości boków jest mniejszy niż 1:10!";
+            return "Dla zadanych parametrów stosunek długości boków jest mniejszy niż 1:10!";
         }
         return "";
     }
 
     public String defineLatterDescription() {
-        return "\nPowyższe obliczenia mają zastosowanie przy następujących założeniach:" +
+        return "Powyższe obliczenia mają zastosowanie przy następujących założeniach:" +
                 "\n\t- szklenie jest pionowe," +
                 "\n\t- wysokość szklenia to 0-8 m ponad powierzchnię gruntu," +
                 "\n\t- szyba jest klinowana na czterech bokach," +

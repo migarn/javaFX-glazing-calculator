@@ -3,9 +3,12 @@ package com.michalgarnczarski;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 
 public class Controller {
 
+    @FXML
+    private GridPane gridPane;
     @FXML
     private Label headerLabel;
     @FXML
@@ -64,14 +67,26 @@ public class Controller {
 
         GlassDescriptionCreator descriptionCreator = new GlassDescriptionCreator(glass);
 
-        if (descriptionCreator.getThicknessDefiner().getThickness() != 0) {
-            upperOutput.setText("\n" + descriptionCreator.defineGeneralDescription() +
-                    "\n\n" + descriptionCreator.defineThicknessDescription());
+        String upperOutputMessage = "\n" + descriptionCreator.defineGeneralDescription();
+        String redMiddleOutputMessage = "";
+        String blackMiddleOutputMessage = "";
+        String lowerOutputMessage = "";
+
+        if (descriptionCreator.getThicknessDefiner().getThickness() != -1) {
+            upperOutputMessage += "\n\n" + descriptionCreator.defineThicknessDescription();
+
+            if (descriptionCreator.getSurchargeDefiner().getSurcharge() == 0) {
+                blackMiddleOutputMessage += descriptionCreator.defineSurchargeDescription();
+            } else {
+                GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 1);
+                redMiddleOutputMessage += descriptionCreator.defineSurchargeDescription();
+            }
 
         }
 
-        middleOutputBlack.setText("");
-        middleOutputRed.setText("");
-        lowerOutput.setText(descriptionCreator.defineLatterDescription());
+        upperOutput.setText(upperOutputMessage);
+        middleOutputBlack.setText(blackMiddleOutputMessage);
+        middleOutputRed.setText(redMiddleOutputMessage);
+        lowerOutput.setText(lowerOutputMessage);
     }
 }
