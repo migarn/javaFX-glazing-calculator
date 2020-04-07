@@ -81,6 +81,6 @@ public class Controller {
         upperOutput.setText("\n" + descriptionCreator.defineGeneralDescription());
         middleOutputBlack.setText("");
         middleOutputRed.setText("");
-        lowerOutput.setText("Temporary output");
+        lowerOutput.setText(descriptionCreator.defineLatterDescription());
     }
 }
