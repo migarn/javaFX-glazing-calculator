@@ -76,12 +76,14 @@ public class Controller {
         // Do usunięcia
         String s = glass.getLongerDimension() + "\n" + glass.getShorterDimension() + "\n" + glass.getArea() + "\n" + glass.getDimensionsRatio();
         GlassThicknessDefiner definer = new GlassThicknessDefiner(glass);
+        GlassSurchargeDefiner definers = new GlassSurchargeDefiner(glass);
         String thickness = "Thickness: " + definer.defineThickness();
+        String surcharge = "Surcharge: " + definers.defineSurcharge();
         //
 
         upperOutput.setText(s);
-        middleOutputBlack.setText(thickness);
-        middleOutputRed.setText("Temporary output");
+        middleOutputBlack.setText(thickness + surcharge);
+        middleOutputRed.setText("");
         lowerOutput.setText("Temporary output");
     }
 }
