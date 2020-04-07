@@ -8,8 +8,6 @@ import javafx.scene.layout.GridPane;
 public class Controller {
 
     @FXML
-    private GridPane gridPane;
-    @FXML
     private Label headerLabel;
     @FXML
     private TextField glassWidthTextField;
