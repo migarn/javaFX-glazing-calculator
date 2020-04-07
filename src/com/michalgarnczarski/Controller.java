@@ -1,7 +1,6 @@
 package com.michalgarnczarski;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -9,33 +8,20 @@ public class Controller {
 
     @FXML
     private Label headerLabel;
-
     @FXML
     private TextField glassWidthTextField;
-
     @FXML
     private TextField glassHeightTextField;
-
     @FXML
     private TextField spacerWidthTextField;
-
-    @FXML
-    private Button calculateButton;
-
     @FXML
     private Label upperOutput;
-
     @FXML
     private Label middleOutputBlack;
-
     @FXML
     private Label middleOutputRed;
-
     @FXML
     private Label lowerOutput;
-
-    private Glass glass;
-    private GlassDescriptionCreator descriptionCreator;
 
     public void initialize() {
 
@@ -73,12 +59,17 @@ public class Controller {
 
     @FXML
     private void calculate() {
-        glass = new Glass(Integer.parseInt(glassWidthTextField.getText()),
+        Glass glass = new Glass(Integer.parseInt(glassWidthTextField.getText()),
                 Integer.parseInt(glassHeightTextField.getText()), Integer.parseInt(spacerWidthTextField.getText()));
 
-        descriptionCreator = new GlassDescriptionCreator(glass);
+        GlassDescriptionCreator descriptionCreator = new GlassDescriptionCreator(glass);
 
-        upperOutput.setText("\n" + descriptionCreator.defineGeneralDescription());
+        if (descriptionCreator.getThicknessDefiner().getThickness() != 0) {
+            upperOutput.setText("\n" + descriptionCreator.defineGeneralDescription() +
+                    "\n\n" + descriptionCreator.defineThicknessDescription());
+
+        }
+
         middleOutputBlack.setText("");
         middleOutputRed.setText("");
         lowerOutput.setText(descriptionCreator.defineLatterDescription());
