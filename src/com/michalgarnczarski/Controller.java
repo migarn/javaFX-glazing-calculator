@@ -84,10 +84,15 @@ public class Controller {
             }
 
             if (glass.getDimensionsRatio() < 0.1) {
+                if (descriptionCreator.getSurchargeDefiner().getSurcharge() > 0) {
+                    GridPane.setRowIndex(lowerOutput,GridPane.getRowIndex(upperOutput) + 2);
+                    redMiddleOutputMessage += "\n\n";
+                } else {
+                    GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 2);
+                    GridPane.setRowIndex(lowerOutput,GridPane.getRowIndex(upperOutput) + 3);
+                }
                 redMiddleOutputMessage += descriptionCreator.defineRatioDescription();
             }
-
-            GridPane.setRowIndex(lowerOutput,GridPane.getRowIndex(upperOutput) + 2);
             lowerOutputMessage = descriptionCreator.defineLatterDescription();
         } else {
             GridPane.setRowIndex(middleOutputRed,GridPane.getRowIndex(upperOutput) + 1);

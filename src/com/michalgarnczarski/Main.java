@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
         primaryStage.setTitle("Kalkulator szyb");
-        primaryStage.setScene(new Scene(root, 620, 800));
+        primaryStage.setScene(new Scene(root, 620, 700));
         primaryStage.setResizable(false);
         primaryStage.show();
     }
