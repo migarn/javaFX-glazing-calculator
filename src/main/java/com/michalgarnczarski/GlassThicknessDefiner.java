@@ -80,7 +80,7 @@ public class GlassThicknessDefiner {
     }
 
     private int defineThicknessFor6() {
-        if (glass.getArea() <= 2 && glass.getLongerDimension() <= 200 && glass.getDimensionsRatio() > 1 / 6) {
+        if (glass.getArea() <= 2 && glass.getLongerDimension() <= 2000 && glass.getDimensionsRatio() > 1 / 6) {
             return 4;
         } else if (glass.getArea() <= 2.5 && glass.getLongerDimension() <= 2500) {
             return 5;
